@@ -18,7 +18,7 @@ const CreateCard = (props) => {
             <h4> Country name : <span>{props.cont.name.common}</span>  </h4>
             <h4> Capital : <span>{props.cont.capital}</span>  </h4>
             <h4> Continents/Region : <span>{props.cont.continents}</span>  </h4>
-            {/* <h4> Currencies : {Object.values(props.cont.currencies.LYD)} </h4> */}
+
             <h4> Languages : <span>{Object.values(props.cont.languages)}</span>  </h4>
             <h4> Timezones : <span>{props.cont.timezones}</span>  </h4>
         
@@ -50,7 +50,6 @@ const CreateCard = (props) => {
                             
                           })
                             
-                          
                       }
                           {
                             showMap &&

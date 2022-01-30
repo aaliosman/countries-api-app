@@ -9,8 +9,8 @@ export default function App() {
   const [input, setInput] = useState('all');
  
   useEffect(() => {
-    getData();
-  }, [input]);
+    getData()
+  }, [input])
 
   const getData = () => {
     if (input !== ''){
