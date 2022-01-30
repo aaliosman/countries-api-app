@@ -37,7 +37,7 @@ export default function App() {
     <>
       <div className="App">
         <header>
-        <h1> Countries Information</h1>
+        <h1> Find Countries Information</h1>
         <input
         placeholder="enter country name"
           Value={input}
