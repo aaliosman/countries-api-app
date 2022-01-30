@@ -11,7 +11,6 @@ export default function App() {
  
   const [isLoading, setIsLoading] = useState(false);
 
-  // console.log(input);
 
   useEffect(() => {
     getData();
@@ -27,12 +26,11 @@ export default function App() {
              
           setData(json);
          
-          console.log(data[0]);
+          console.log(data);
   
         }).then(() => {setInput('')})
     }
    
-
   };
 
   return (
@@ -45,32 +43,18 @@ export default function App() {
           Value={input}
           type="text"
           onChange={(e) => {
-            // if (e.target.value === '') {
-            //   setInput('all');
-             
-            // } else {
-            //   setInput(e.target.value);
-              
-            // }
             setInput(e.target.value);
           }}
         />
         <br />
         <br />
-        {/* <button onClick={ () =>{
-          getData()
-      
-        }
-          
-         
-        }>search</button> */}
                       
         </header>
  
       </div>
       <div className="card-main">
       {data.map((it , index) => {
-      
+      console.log(it);
       return (
         <CreateCard 
         key= {index}

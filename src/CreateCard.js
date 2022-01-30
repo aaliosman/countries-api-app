@@ -41,10 +41,8 @@ const CreateCard = (props) => {
                    <div className="borders">
                    
                       {
-                         
-                        
                           props.cont.borders.map((neben) => {
-                            // if (props.cont.includes('borders')) {
+                         
                              return <div className="neben"
                              onClick={ () => {props.input(neben)}}
                              > {neben} </div>
@@ -69,12 +67,8 @@ const CreateCard = (props) => {
     <Card key={props.key} style={{ width: '15rem' }} className="card"
     onClick={() => {
         setCardInfo(true)
-        // setCardShow(!CardShow)
         }}>
-        
-        
-    
-    
+
     <Card.Img variant="top" key={props.key} src={props.cont.flags.png} />
     <Card.Body key={props.key}>
       <Card.Title key={props.key}>
@@ -95,7 +89,6 @@ const CreateCard = (props) => {
         <button 
         onClick={ () => {
             props.input('all')
-            // setCardInfo(false)
         }}>zukzk</button> 
         :
         null
