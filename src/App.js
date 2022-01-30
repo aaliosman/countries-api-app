@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CreateCard from './CreateCard'
 
-import { InputGroup, Button, FormControl} from 'react-bootstrap';
 
 import './App.css';
 
@@ -9,9 +8,6 @@ export default function App() {
   const [data, setData] = useState([]);
   const [input, setInput] = useState('all');
  
-  const [isLoading, setIsLoading] = useState(false);
-
-
   useEffect(() => {
     getData();
   }, [input]);
